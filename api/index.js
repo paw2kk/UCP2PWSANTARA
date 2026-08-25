@@ -1,5 +1,5 @@
 const express = require("express");
-
+const app = require("../server");
 const app = express();
 
 app.get("/api/health", (req, res) => {
