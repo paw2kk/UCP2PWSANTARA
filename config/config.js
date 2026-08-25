@@ -1,8 +1,8 @@
 require("dotenv").config();
 module.exports = {
-  development: { url: process.env.DATABASE_URL, dialect: "postgres", logging: false },
+  development: { url: process.env.POSTGRES_URL, dialect: "postgres", logging: false },
   production: {
-    url: process.env.DATABASE_URL,
+    url: process.env.POSTGRES_URL,
     dialect: "postgres",
     logging: false,
     dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }
